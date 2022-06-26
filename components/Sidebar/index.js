@@ -1,6 +1,6 @@
 import styles from "./Sidebar.module.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import SidebarOption from "../SidebarOption.js";
+import SidebarOption from "../SidebarOption";
 import HomeIcon from "@mui/icons-material/Home";
 import TagIcon from "@mui/icons-material/Tag";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
@@ -19,7 +19,7 @@ function Sidebar() {
       <TwitterIcon className={styles.twitter__icon} />
 
       {/* Sidebar Option */}
-      <SidebarOption active Icon={HomeIcon} text="Home" />
+      <SidebarOption Icon={HomeIcon} text="Home" />
       <SidebarOption Icon={TagIcon} text="Explore" />
       <SidebarOption Icon={NotificationsNoneIcon} text="Notification" />
       <SidebarOption Icon={MailOutlineIcon} text="Messages" />
